@@ -1,0 +1,5 @@
+br/com/vocehamburguer/test/model/IngredienteTest.class
+br/com/vocehamburguer/test/model/HamburguerTest.class
+br/com/vocehamburguer/test/service/EntregaServiceTest.class
+br/com/vocehamburguer/test/model/CozinheiroTest.class
+br/com/vocehamburguer/test/model/InspetorTest.class

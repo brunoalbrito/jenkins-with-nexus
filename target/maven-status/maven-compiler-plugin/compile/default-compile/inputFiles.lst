@@ -1,0 +1,9 @@
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/model/Hamburguer.java
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/model/Inspetor.java
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/enums/TipoIngrediente.java
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/model/Ingrediente.java
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/repository/DeliveryRepository.java
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/model/Funcionario.java
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/model/Cozinheiro.java
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/model/Avaliacao.java
+/Users/brunobrito/Documents/voce-hamburguer/src/main/java/br/com/vocehamburguer/service/EntregaService.java

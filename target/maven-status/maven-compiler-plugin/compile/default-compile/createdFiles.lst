@@ -1,0 +1,10 @@
+br/com/vocehamburguer/model/Cozinheiro.class
+br/com/vocehamburguer/model/Inspetor.class
+br/com/vocehamburguer/model/Avaliacao.class
+br/com/vocehamburguer/model/Ingrediente.class
+br/com/vocehamburguer/model/Funcionario.class
+br/com/vocehamburguer/model/Ingrediente$IngredienteBuilder.class
+br/com/vocehamburguer/model/Hamburguer.class
+br/com/vocehamburguer/enums/TipoIngrediente.class
+br/com/vocehamburguer/service/EntregaService.class
+br/com/vocehamburguer/repository/DeliveryRepository.class
