@@ -1,6 +1,11 @@
 pipeline {
-    agent { docker { image 'maven:3-alpine' } }
-    
+    agent {
+        label "master"
+    }
+    tools {
+        // Note: this should match with the tool name configured in your jenkins instance (JENKINS_URL/configureTools/)
+        maven "Maven 3.6.0"
+    }
     environment {
         // This can be nexus3 or nexus2
         NEXUS_VERSION = "nexus3"
@@ -11,16 +16,19 @@ pipeline {
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "repository-example"
         // Jenkins credential id to authenticate to Nexus OSS
-        NEXUS_CREDENTIAL_ID = "nexus-cred"
+        NEXUS_CREDENTIAL_ID = "nexus-credentials"
     }
     stages {
-        stage('build') {
+        stage("mvn build") {
             steps {
-                sh 'mvn -B -DskipTests clean package' 
+                script {
+                    // If you are using Windows then you should use "bat" step
+                    // Since unit testing is out of the scope we skip them
+                    sh "mvn package -DskipTests=true"
+                }
             }
         }
-
-    stage("nexus") {
+        stage("publish to nexus") {
             steps {
                 script {
                     // Read POM xml file using 'readMavenPom' step , this step 'readMavenPom' is included in: https://plugins.jenkins.io/pipeline-utility-steps
